@@ -118,11 +118,11 @@ We are rebalancing the portfolio every week, so for a particular rebalancing dat
 Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) architecture that is particularly effective for sequence prediction tasks, making it well-suited for stock price prediction.
 
 LSTMs are well-suited for stock price prediction due to the temporal nature of financial time series data. Here's how LSTMs are commonly applied in this context:
-- Temporal Dependencies: LSTMs can capture and utilize temporal dependencies in stock price movements. This is important because stock prices are often influenced by historical price patterns.
-- Feature Extraction: LSTMs can automatically learn relevant features from the input data, which is essential when dealing with complex and high-dimensional financial data.
-- Handling Non-linearity: Stock price movements are often nonlinear and influenced by a variety of factors. LSTMs, with their ability to model complex relationships, can handle this non-linearity better than simpler models.
-- Sequence-to-Sequence Learning: LSTMs can be trained in a sequence-to-sequence manner, taking historical stock prices as input and predicting future prices as output.
-- Handling Varying Time Intervals: LSTMs can adapt to irregularly spaced time intervals in financial data, allowing for more flexibility in modeling.
+- **Temporal Dependencies**: LSTMs can capture and utilize temporal dependencies in stock price movements. This is important because stock prices are often influenced by historical price patterns.
+- **Feature Extraction**: LSTMs can automatically learn relevant features from the input data, which is essential when dealing with complex and high-dimensional financial data.
+- **Handling Non-linearity**: Stock price movements are often nonlinear and influenced by a variety of factors. LSTMs, with their ability to model complex relationships, can handle this non-linearity better than simpler models.
+- **Sequence-to-Sequence Learning**: LSTMs can be trained in a sequence-to-sequence manner, taking historical stock prices as input and predicting future prices as output.
+- **Handling Varying Time Intervals**: LSTMs can adapt to irregularly spaced time intervals in financial data, allowing for more flexibility in modeling.
 
 In order to use LSTM, the input and output data should have a specific shape. In a nutshell, the input in an LSTM model is a three-dimensional array where the first dimension represents the number of samples (or batch size) like the number of rows of data in a two-dimensional setting, the second dimension stands for time steps which indicates the amount of time that we want to go back through time, and the third dimension shows the number of features. So, the input shape looks like [number_of_samples, time_steps, input_dim].
 
