@@ -131,7 +131,7 @@ In order to use LSTM, the input and output data should have a specific shape. In
        <img src="https://github.com/himanshu1311/nifty50_portfolio_optimization/blob/main/Images/LSTM_Shape.png"/>
     </p>
     <p align="center">
-      <em> LSTM Input Shape [Source] (https://shiva-verma.medium.com/understanding-input-and-output-shape-in-lstm-keras-c501ee95c65e) :  </em>
+      <em> LSTM Input Shape Source : medium.com :  </em>
     </p>
 </figure>
 
@@ -152,7 +152,7 @@ We explore more features which could be helpful in stock price forecasting. We h
        <img src="https://github.com/himanshu1311/nifty50_portfolio_optimization/blob/main/Images/heatmap_ongc.png"/>
     </p>
     <p align="center">
-      <em> Correlation of Input Data in Heat Map ( for ONGC Stock Prices )</em>
+      <em> Correlation of Input Data in Heat Map (for ONGC Stock Prices)</em>
     </p>
 </figure>
 
