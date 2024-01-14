@@ -131,7 +131,7 @@ In order to use LSTM, the input and output data should have a specific shape. In
        <img src="https://github.com/himanshu1311/nifty50_portfolio_optimization/blob/main/Images/LSTM_Shape.png"/>
     </p>
     <p align="center">
-      <em> Covariance matrix calculation </em>
+      <em> LSTM Input Shape (Source </em>
     </p>
 </figure>
 
@@ -139,7 +139,22 @@ We explore more features which could be helpful in stock price forecasting. We h
 
 -  RSI is a metric which has been found useful while studying movement of stock prices. It is commonly used in technical analysis to identify overbought or oversold conditions in a financial market. The RSI value oscillates between 0 and 100. When RSI values are above a certain threshold (typically 70), it suggests that the stock may be overbought, and there is a higher likelihood of a price correction or reversal. Conversely, when RSI values are below a certain threshold (typically 30), it indicates that the stock may be oversold, and there could be a potential for a price rebound. RSI appears to correlate to Stock Prices, we further categorized RSI values in Low (RSI < 30), Medium( RSI >30, RSI <70) and High category (RSI >70). 
 -  VWAP is the ratio of the value of a security or financial asset traded to the total volume of transactions during a trading session.
--  SMA (Simple Moving Averages) and EMA are some well know pointers when it comes to Price Tracking and making decisions based on them. These methods help in identifying trends related to stock prices. While as the name suggests, SMA are just the average of a period where as EMA attach weights to the calculation and sensitive to recent price movements. We have used EMA of the stock price as the input
+-  SMA (Simple Moving Averages) and EMA are some well know pointers when it comes to Price Tracking and making decisions based on them. These methods help in identifying trends related to stock prices. While as the name suggests, SMA are just the average of a period where as EMA attach weights to the calculation and sensitive to recent price movements. We have used EMA of the stock price as the input to the model.
+
+In a nutshell, below are the input to LSTM Model:
+- Last 5 day data of Close Price, Volume, VWAP percent change, 5 Day EMA, 21 Day EMA, 100 Day EMA, RSI for 5 days, RSI for 14 days, RSI Categary of 14 days
+Output of the Model:
+- Next 5 days Close Price
+
+<figure>
+    <p align="center">
+       <img src="https://github.com/himanshu1311/nifty50_portfolio_optimization/blob/main/Images/download.png"/>
+    </p>
+    <p align="center">
+      <em> Correlation of Input Data in Heat Map </em>
+    </p>
+</figure>
+
 
 ### Results and Conclusion
 
