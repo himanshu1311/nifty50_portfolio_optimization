@@ -157,6 +157,8 @@ We explore more features which could be helpful in stock price forecasting. We h
 </figure>
 
 
+We have trained models for each stocks separately, using MAE as the loss function.
+
 ### Results and Conclusion
 
 
