@@ -124,6 +124,22 @@ LSTMs are well-suited for stock price prediction due to the temporal nature of f
 - Sequence-to-Sequence Learning: LSTMs can be trained in a sequence-to-sequence manner, taking historical stock prices as input and predicting future prices as output.
 - Handling Varying Time Intervals: LSTMs can adapt to irregularly spaced time intervals in financial data, allowing for more flexibility in modeling.
 
+In order to use LSTM, the input and output data should have a specific shape. In a nutshell, the input in an LSTM model is a three-dimensional array where the first dimension represents the number of samples (or batch size) like the number of rows of data in a two-dimensional setting, the second dimension stands for time steps which indicates the amount of time that we want to go back through time, and the third dimension shows the number of features. So, the input shape looks like [number_of_samples, time_steps, input_dim].
+
+<figure>
+    <p align="center">
+       <img src="https://github.com/himanshu1311/nifty50_portfolio_optimization/blob/main/Images/LSTM_Shape.png"/>
+    </p>
+    <p align="center">
+      <em> Covariance matrix calculation </em>
+    </p>
+</figure>
+
+We explore more features which could be helpful in stock price forecasting. We have downloaded two variables from yfinance, Close price and Volume of each stocks. We created new features - Relative Strength Index (RSI), exponential moving averages, Volume-Weighted average price (VWAP) for different period, VWAP change.
+
+-  RSI is a metric which has been found useful while studying movement of stock prices. It is commonly used in technical analysis to identify overbought or oversold conditions in a financial market. The RSI value oscillates between 0 and 100. When RSI values are above a certain threshold (typically 70), it suggests that the stock may be overbought, and there is a higher likelihood of a price correction or reversal. Conversely, when RSI values are below a certain threshold (typically 30), it indicates that the stock may be oversold, and there could be a potential for a price rebound. RSI appears to correlate to Stock Prices, we further categorized RSI values in Low (RSI < 30), Medium( RSI >30, RSI <70) and High category (RSI >70). 
+-  VWAP is the ratio of the value of a security or financial asset traded to the total volume of transactions during a trading session.
+-  SMA (Simple Moving Averages) and EMA are some well know pointers when it comes to Price Tracking and making decisions based on them. These methods help in identifying trends related to stock prices. While as the name suggests, SMA are just the average of a period where as EMA attach weights to the calculation and sensitive to recent price movements. We have used EMA of the stock price as the input
 
 ### Results and Conclusion
 
