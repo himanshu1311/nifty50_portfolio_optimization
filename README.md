@@ -14,7 +14,7 @@ Markowitz model, also known as mean-variance model was introduced by Harry marko
 Finding the most optimized portfolio is a two step process begining with finding the set of efficient portfolios followed by picking one from the set with maximum return for a given risk or lowest risk for given return.
 
 ##### Efficient Frontier
-a hyperbola representing portfolios with all the different combinations of assets that result into efficient portfolios (i.e. with the lowest risk, given the same return and portfolios with the highest return, given the same risk). Risk is depicted on the X-axis and return is depicted on the Y-axis. The area inside the efficient frontier (but not directly on the frontier) represents either individual assets or all of their non-optimal combinations.
+A hyperbola representing portfolios with all the different combinations of assets that result into efficient portfolios (i.e. with the lowest risk, given the same return and portfolios with the highest return, given the same risk). Risk is depicted on the X-axis and return is depicted on the Y-axis. The area inside the efficient frontier (but not directly on the frontier) represents either individual assets or all of their non-optimal combinations.
 
 
 
@@ -115,8 +115,14 @@ We are rebalancing the portfolio every week, so for a particular rebalancing dat
 
 ### Asset Returns Forecast
 
+Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) architecture that is particularly effective for sequence prediction tasks, making it well-suited for stock price prediction.
 
-
+LSTMs are well-suited for stock price prediction due to the temporal nature of financial time series data. Here's how LSTMs are commonly applied in this context:
+- Temporal Dependencies: LSTMs can capture and utilize temporal dependencies in stock price movements. This is important because stock prices are often influenced by historical price patterns.
+- Feature Extraction: LSTMs can automatically learn relevant features from the input data, which is essential when dealing with complex and high-dimensional financial data.
+- Handling Non-linearity: Stock price movements are often nonlinear and influenced by a variety of factors. LSTMs, with their ability to model complex relationships, can handle this non-linearity better than simpler models.
+- Sequence-to-Sequence Learning: LSTMs can be trained in a sequence-to-sequence manner, taking historical stock prices as input and predicting future prices as output.
+- Handling Varying Time Intervals: LSTMs can adapt to irregularly spaced time intervals in financial data, allowing for more flexibility in modeling.
 
 
 ### Results and Conclusion
