@@ -141,9 +141,10 @@ We explore more features which could be helpful in stock price forecasting. We h
 -  VWAP is the ratio of the value of a security or financial asset traded to the total volume of transactions during a trading session.
 -  SMA (Simple Moving Averages) and EMA are some well know pointers when it comes to Price Tracking and making decisions based on them. These methods help in identifying trends related to stock prices. While as the name suggests, SMA are just the average of a period where as EMA attach weights to the calculation and sensitive to recent price movements. We have used EMA of the stock price as the input to the model.
 
-In a nutshell, below are the input to LSTM Model:
+**In a nutshell, below are the input to LSTM Model:**
 - Last 5 day data of Close Price, Volume, VWAP percent change, 5 Day EMA, 21 Day EMA, 100 Day EMA, RSI for 5 days, RSI for 14 days, RSI Categary of 14 days
-Output of the Model:
+  
+**Output of the Model:**
 - Next 5 days Close Price
 
 <figure>
