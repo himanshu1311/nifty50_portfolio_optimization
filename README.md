@@ -161,6 +161,33 @@ We have trained models for each stocks separately, using MAE as the loss functio
 
 ### Results and Conclusion
 
+Once we get the expected returns for all the assets and the covariance matrix, we can find the asset weights for the most optimized portfolio. Here we are aiming to rebalance the portfolio weekly so we're going to find the best set of weights based on a week's return and volatility. Given our testing period starts Jan-2023 till end of december, we will rebalance the portfolio every friday. 
+
+Here are the returns and other portfolio metrics to analyze the performance:
+
+<div align="center">
+
+<table>
+    
+|        |        |
+|--------|--------|
+|Annual Returns Gain|**35.2 %**|
+|Annual Volatility|**13.7 %**|
+|Sharpe Ratio|**2.6**|
+|Maximum Drawdown|**-9.7 %**|
+
+</table>
+
+</div>
+
+The performance looks promising and resonates the significant scope of LSTM networks in time series forecast. 
+
+
+* Codes are available at: 
+
+
+        
+
 
 
 
