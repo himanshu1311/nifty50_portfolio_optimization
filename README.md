@@ -183,8 +183,6 @@ Here are the returns and other portfolio metrics to analyze the performance:
 The performance looks promising and resonates the significant scope of LSTM networks in time series forecast. 
 
 
-<em>Codes available on request at: https://github.com/himanshu1311/nifty50_portfolio_optimization_code</em>
-
 
         
 
